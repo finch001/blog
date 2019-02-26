@@ -2,7 +2,7 @@
 在所有的打包工具里面都有一个入口文件， 相当于一棵树的主干，入口文件有很多的依赖模块，相当于树枝。实际情况是，虽然依赖某个模块，但是可能只使用了其中的某些功能，通过tree-shaking，将没有使用的模块去掉。
 
 ## tree-shaking的原理
-Tree-shaking的本质是消除误用的代码， Tree-shaking是DCE的一种新的实现。
+Tree-shaking的本质是消除无用的代码， Tree-shaking是DCE的一种新的实现。
 Dead Code一般具有一下几个特征
 - 代码不会被执行，不可到达
 - 代码执行的结果不会被用到
@@ -14,7 +14,7 @@ rollup vs webpack
 rollup将无用的代码函数和 unused函数消除了，但是还是会默认保留不会执行到的代码，而webpack完整的保留了所有的无用代码和不会执行的代码
 
 rollup + uglify vs webpack + uglify
-默认素有的打包都去掉了无法执行的代码。
+默认所有的打包都去掉了无法执行的代码。
 
 ### Tree-shaking如何消除
 Tree-shaking消除模块依赖于 ES6 module特点：
