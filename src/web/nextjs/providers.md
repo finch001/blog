@@ -52,8 +52,9 @@ export class CatsService {
 有时候可能不需要其他的依赖 我们可以使用@optional来解决这个问题
 
 ### Property-based injection
+有时候顶层的Provider也会依赖其他的几个provicer，我们通常是属性来注入，直接通过@Inject(name)来注入
 
 ### Provider registration
 
-我们需要告诉module 某个Service存在，通过注解@Module（{
+我们需要告诉module 某个Service存在，也就是将 Provider 注册到 Module 里面，主要是通过Module中的providers
 

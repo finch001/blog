@@ -1,5 +1,4 @@
 # 概览
-## 第一步
 ## [控制器 (Controllers)](./controller.md)
 ## [提供者 (Providers)](./providers.md)
 ## 模块 (Modules)

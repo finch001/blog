@@ -140,7 +140,7 @@ findAll: Observable<any[]>{
 
 ### 请求负载
 
-当需要上传数据的时候，我们会用到 `@Body()` 参数，首先我们需要决定DTO（Data Transfer Object） 一个DTO决定了数据如何在网络上传输。我们可以使用 ` TypeScript`的接口特性或者简单的Class 来处理DTO，但是在Next框架的情况下还是建议使用**class**, 因为 TypeScript最后在编译的时候会被转移成普通对象，如果是 `class` 在处理 Pipes会更有帮助
+当需要上传数据的时候，我们会用到 `@Body()` 参数，首先我们需要决定DTO（Data Transfer Object） 一个DTO决定了数据如何在网络上传输。我们可以使用 ` TypeScript`的接口特性或者简单的Class 来处理DTO，但是在Next框架的情况下还是建议使用**class**, 因为 TypeScript最后在编译的时候会被转移成普通对象，如果是 `class`保留了metadata 在处理 Pipes会更有帮助
 
 ~~~~~js
 // create-cat.dto.ts
