@@ -112,6 +112,6 @@ meta标签是由 name 和content两个属性来定义。
   <!-- Scripts should be loaded asynchronously or deferred -->
   <script src="js/main.js" async></script>
   
-</head>
+</head> 
 ~~~~~
 
