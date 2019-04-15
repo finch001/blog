@@ -22,6 +22,41 @@ Node.js 的调试器客户端不是一个功能齐全的调试器，但可以进
 
 ## Node常见调试方法
 ### VsCode客户端调试
+VSCode 默认内置了Node.js的debugging。
+#### Launch configurations
+VSCode通过将 `.vscode ` 调试的配置配置在launch.json来调试代码。
+~~~json
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Program",
+            "program": "${file}"
+        }
+    ]
+}
+~~~
+
+#### Launch versus attach configurations
+request: Launch 和 Attach 是两种不同的debug工作流方式
+- Launch
+  比较适合服务端开发，一般vscode编辑器则是通过这种方式来调试代码
+- Attach
+  比较适合浏览器开发，通过将DevTools对接到打开的浏览器来调试代码 
+
+####Launch.json配置文件
+- type  eg: node php go
+- request  launch attach
+- name debug的名字
+一些有用的参数
+- program 启动的程序入口 `"${workspaceFolder}/app.js"`
+- args 启动程序的参数 `{ "NODE_ENV": "develop" }`
+- env 环境变量 默认是null
+- cwd 当前的工作目录 一般使用 `${workspaceRoot}`
+- port debug运行时的端口
+- console 使用什么console  `internalConsole, integratedTerminal, or externalTerminal`
 
 
 

@@ -5,6 +5,9 @@
 ## 算法
 -----------------------
 ## web
+- [graphql-type](./src/web/graphql/type.md)
+- [graphql-query](./src/web/graphql/query.md)
+
 -----------------------
 ## react 学习笔记
 
