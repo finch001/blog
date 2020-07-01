@@ -1,0 +1,14 @@
+{
+  "devDependencies": {
+    "vuepress": "^1.5.2"
+  },
+  "name": "blog",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "build:doc": "vuepress build ."
+  },
+  "repository": "git@github.com:finch001/blog.git",
+  "author": "mobai <mobai@douyu.tv>",
+  "license": "MIT"
+}
