@@ -1,4 +1,4 @@
 git pull
-yarn build
+npm run build:doc
 git checkout gh-pages
 git push
